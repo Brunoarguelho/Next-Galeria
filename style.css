@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+
+.cabecalho{ /*header*/
+    display: flex;
+    background: linear-gradient(to right, white, tomato);
+    border-bottom: 4px solid goldenrod;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.logo-img{ /*logo da imagem*/
+    width: 150px;
+    height: 115px;
+}
+
+.nav{   /*Logo Galeria*/
+    display: flex;
+    align-items: center;    
+    gap: 4px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1.8em;
+    color: rgb(117, 89, 20);
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    text-shadow: -20px 28px 0px black;
+}
+
+.nav:hover{  /*Logo Galeria hover*/
+    color: maroon;
+    text-shadow: 0px 0px 0px black;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.menu{ /*nav*/
+    display: flex;
+}
+
+.menu ul{  /*nav ul*/
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.menu li a{  /*nav li a*/
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 1.4vw;
+    font-weight: normal;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+} 
+
+.menu li a:hover{  /*nav li a hover*/
+    color: maroon;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .1s;
+}
+
+.menu-click{  /*icon menu*/
+    display: none;
+}
+/*final do cabeçalho e nav*/
+
+/*começo do conteúdo principal*/
+
+.album{  /*h2 album*/
+    text-align: center;
+    margin: 10px 0;
+    color: rgb(170, 130, 27);
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 2vw;
+}
+.principal{
+    display: flex;
+}
+
+.slides{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    max-width: 290px;
+    max-height: 300px;
+    border-radius: 8px;
+    border: 2px solid #8867156d;
+    margin: 0 3px;
+    resize: vertical;
+}
+
+.next{  /*icon seta pra passar*/
+    position: absolute;
+    top: calc(50% - 95px);
+    right: 10px;
+    font-size: 2vw;
+    color: goldenrod;
+    border-radius: 50%;
+    background: #ffffff12;
+    box-shadow: 0 0 2px #ffffff99;
+}
+
+.prov{  /*icon de seta para volta*/
+    position: absolute;
+    top: calc(50% - 95px);
+    left: 10px;
+    font-size: 2vw;
+    color: goldenrod;
+    border-radius: 50%;
+    background: #ffffff12;
+    box-shadow: 0 0 2px #ffffff99;
+}
+
+.prov, .next:hover{
+    cursor: pointer;
+}
+
+.ele-segundo{  /*segunda section*/
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    height: 460px;
+    background: #0000006f;
+    background-image: url(imagem/section2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.ele-filho >p{ /*div filho section-segunda*/
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 1.3vw;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #dcdcdca8;
+}
+
+.text-shadow{ /*div com palavra cadastro*/
+   font-size: 3.2em;
+   color: #b8b8b834;
+   letter-spacing: 0.1em; /*da um espaço entre as letra*/
+}
+
+.ele-filho >h1{ /*h1 cadastro*/
+    margin-top: -46px;
+    font-size: 2em;
+    font-weight: normal;
+    color: #b8b8b8c7;
+}
+
+.ele-filho  a{ /*link dentra da segunda section*/
+    text-decoration: none;
+    color: #d5a221ce;
+}
+
+.ele-filho  a:hover{ /*link dentra da segunda section hover*/
+    text-decoration: underline;
+    color: #d5a221ce;
+}
+
+/*final da segunda section*/
+
+/*começo da terceira section*/
+
+.ele-terceiro{  /*terceira section*/
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+    height: 300px;
+    background: #0000006f;
+    border: 4px solid #7c5f1421;
+    position: relative;
+}
+
+.ele-filho2 >p{ /*div filho section-terceiro*/
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 1.3vw;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #dcdcdca8;
+    text-align: center;
+} 
+
+.ele-filho2 >h2{ /*h1 cadastro*/
+    margin-top: -46px;
+    font-size: 2em;
+    font-weight: normal;
+    color: #b8b8b8b1;
+}
+
+.video{ /*DIV envolvendo o iframe*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/*final da terceira section*/
+
+/*inicio da quarta section*/
+
+.ele-quarto{
+    width: 100%;
+    height: 200px;
+    background: #0000006f;
+    border: 4px solid #7c5e1447;
+    text-align: center;
+}
+
+.ele-quarto h2{
+    color: #dcdcdca8;
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 5px 0;
+    background: #00000087;
+    max-width: 1000px;
+    margin: 15px auto;
+    border-radius: 3px;
+    border: 1px dotted #dcdcdc67;
+}
+
+.ele-quarto p a{
+    display: inline-block;
+    line-height: 5;
+    color: #dcdcdca8;
+    transition: all .3s ease-out;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.ele-quarto a {
+    font-family: 'Petit Formal Script', cursive;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: all 0.9s ease-in-out;
+}
+
+.ele-quarto a::after {
+    content: attr(data-hover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(20px);
+    text-shadow: 0 0 1px whitesmoke;
+}
+
+.ele-quarto a:hover {
+    transform: translateY(-20px);
+    color: #a28f0f;
+    text-decoration: overline;
+}
+
+.ele-quarto a:hover::after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/*fim da quarta section*/
+
+/*inicio da quinta section*/
+
+.imagem-casamento img{ /*imagem casamento depois da quarto section*/
+    width: 100%;
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.ele-quinto{ /*section quinta*/
+    text-align: center;
+    color: #dcdcdca8;
+    width: 100%;
+    height: 500px;
+    max-width: 1000px;
+    min-width: 500px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px auto;
+}
+
+.ele-quinto h2{ /*orçamento*/
+    line-height: 1.6;
+    font-size: 2em;
+    color: #dcdcdca8;
+    font-family: 'Petit Formal Script', cursive;
+    margin-bottom: 20px;
+}
+
+.ele-quinto p{ /*paragrafo*/
+    margin-bottom: 25px;
+}
+
+.ele-quinto >form{ /*tag form*/
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.ele-quinto label{ /*infromação de dados*/
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.ele-quinto input{ /*area de preencher*/
+    border: 1px solid #dcdcdc45;
+    outline: none;
+    background-color: #00000056;
+    padding: 6px 9px;
+    color: #dcdcdca8;
+    font-size: 1em;
+    border-radius: 2px;
+}
+
+.text-area textarea{ /*area de texto*/
+    width: 100%;
+    text-indent: 10px;
+}
+
+.enviar input{ /*bottom de enviar*/
+    margin-top: -5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.enviar input:hover{ /*bottom de enviar*/
+    font-weight: bold;
+    padding: 5px 8px;
+    border: 0.5px solid #daa52069;
+    text-decoration: underline;
+}
+
+/*Fim da section*/
+
+/*inicio da aside*/
+
+aside{
+    text-align: center;
+    background: #00000067;
+    width: 100%;
+    height: 490px;
+    border: 4px solid #7c5e1447;
+}
+
+aside >h2{
+    position: relative;
+    margin-top: -39px;
+    z-index: 3;
+    font-size: 1.5em;
+    color: #dcdcdca8;
+    font-weight: bold;
+}
+
+aside >p{
+    margin-top: 22px;
+    font-size: 1.2em;
+    color: #bcbcbcad;
+}
+
+aside > form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    color: #bcbcbcad;
+}
+
+aside label{
+    padding: 4px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+aside input{
+    border: 1px solid #dcdcdc45;
+    outline: none;
+    background-color: #00000056;
+    padding: 6px 20px;
+    color: #dcdcdca8;
+    font-size: 1em;
+    border-radius: 2px;
+    margin-bottom: 8px;
+}
+
+aside textarea{
+    text-indent: 15px;
+    color: #dcdcdca8;
+}
+
+#aside-enviar{
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-top: 15px;
+}
+
+/*fim  do aside*/
+
+/*inicio do footer*/
+
+footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    color: #dcdcdca8;
+    font-size: 1.2em;
+}
+
+footer pre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 4;
+    margin: 20px auto;
+}
+
+.inf-menor{ /*coreção da tag pre*/
+    display: none;
+}
+
+footer >h3{
+   margin-bottom: 20px;
+   font-size: 1.5em;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bold;
+   color: goldenrod;
+}
+
+#mapa iframe{
+    width: 100%;
+    height: 270px;
+    position: relative;
+    border: none;
+}
+
+footer >p{
+    padding: 20px 0;
+    background-attachment: fixed;
+    background-color: #000000b7;
+    font-size: 1.1em;
+
+}
+
+/*amanhã concerta no tamanho de um tablet*/
+
+@media screen and (max-width: 1050px) { /*tablet */
+    .cabecalho{
+        justify-content: space-evenly;
+        height: 110px; 
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu-click{
+        display: block;
+        position: absolute;
+        top: 3em;
+        left: 0;
+        margin-left: 5px;
+        font-size: 1.5em;
+    }
+
+    .menu-click:hover{
+        cursor: pointer;
+        color: maroon;
+        font-weight: bold;
+        transition: all.5s ease-in-out;
+    }
+
+    footer pre{
+        display: none;
+    }
+
+    .inf-menor{
+        display: block;
+        width: 100%;
+        line-height: 2;
+        margin-bottom: 15px;
+    }
+
+}
+
