@@ -9,6 +9,63 @@ body{
     background-color: #333;
 }
 
+.center{ /*inicio do preloader*/
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.ring{ /*preloader*/
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+
+@keyframes ring{ /*preloader*/
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #daa520;
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: -1px 5px 2px #ff6347;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #800000;
+    }
+}
+
+.ring::before{ /*preloader*/
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+    border-radius: 50%;
+}
+
+span{ /*preloader*/
+    color: #737373;
+    font-size: 18px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    line-height: 200px;
+    animation: text 3s linear infinite;
+}
+
+@keyframes text{
+    50%{
+       color: var(--primeira-color);
+    }
+} /*fim do preloader*/
+
 .container{
     padding: 25px 1%;
     text-align: center;
@@ -35,8 +92,8 @@ body{
 
 
 .input-icon #icon{
-    position: absolute;
-    top: 106px;
+    position: relative;
+    top: 8px;
     margin-left: -50px;
     pointer-events: none;
     color: goldenrod;
@@ -149,7 +206,7 @@ body{
      }
 
      .input-icon #icon{
-        top: 100px;
+        top: 6px;
         margin-left: -40px;
         font-size: 25px;
     }

@@ -6,12 +6,24 @@
     <title>Galeria</title>
     <link rel="stylesheet" href="style02.css">
     <link rel="shortcut icon" href="../favicon/camera.png" type="image/x-icon">
-
+    <!--blibioteca de icon e preloader-->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script> /*biblioteca preloader*/
+        $(window).on('load', function() {
+            /* Quando a página estiver totalmente carregada, o div de carregamento será ocultado */
+           $('.center').fadeOut('slow');
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
+    <div class="center"> <!--preloader-->
+        <div class="ring"></div>
+        <span>Carregando...</span>
+    </div>
+    <div class="container"> <!--div pai-->
             <h1 class="heading">Pesquisar Imagem</h1>
 
                <div class="input-icon">

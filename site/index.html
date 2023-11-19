@@ -9,7 +9,7 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script>
+    <script> /*blibioteca pre-loader*/
         $(window).on('load', function() {
             /* Quando a página estiver totalmente carregada, o div de carregamento será ocultado */
            $('.center').fadeOut('slow');
@@ -17,17 +17,17 @@
     </script>
 </head>
 <body>
-    <div class="center">
+    <div class="center"> <!--preloader-->
         <div class="ring"></div>
         <span>Carregando...</span>
     </div>
     <!-- Menu -->
     <header class="cabecalho">
-        <img class="logo-img" src="imagem/fotoarte.png" alt="Arte">
+        <img class="logo-img" src="../imagem/fotoarte.png" alt="Arte">
          <nav class="navegacao">
             <ul class="menu">
                 <li> 
-                   <a href="../index02.html" id="galeria"><ion-icon name="camera-outline" class="footer-icon"></ion-icon>Galeria</a>
+                   <a href="../galeria-foto/index02.html" target="_parent" id="galeria"><ion-icon name="camera-outline" class="footer-icon"></ion-icon>Galeria</a>
                 </li>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre">Sobre</a></li>
