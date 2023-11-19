@@ -1,179 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>  
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Galeria</title>
-    <link rel="shortcut icon" href="favicon/camera.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
-<body> <!--next galeria semi-pronto-->
+<body>
+    <span class="loading">
+        
+    </span>
+    <span class="loading-frase">
+        <p>Carregando...</p>
+    </span>
+    <!-- Menu -->
     <header class="cabecalho">
         <img class="logo-img" src="imagem/fotoarte.png" alt="Arte">
-            <a class="nav" href="#"><span class="material-symbols-outlined">
-                linked_camera
-            </span> Galeria</a>
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Cadrastro</a></li>
-                    <li><a href="#">Local</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-            <span class="menu-click"><ion-icon name="menu-outline"></ion-icon></span>
+         <nav class="navegacao">
+            <ul class="menu">
+                <li><a href="#galeria" id="galeria">Galeria</a></li>
+                <li><a href="#inicio" class="header-link">Inicio</a></li>
+                <li><a href="#sobre" class="header-link">Sobre</a></li>
+                <li><a href="#contato" class="header-link">Contato</a></li>
+                <li><a href="#local" class="header-link">Local</a></li>
+            </ul>
+         </nav>
+         <div class="btn-abrir">
+             <ion-icon name="menu-outline"></ion-icon>
+         </div>
+         <!-- <div class="barra-lateral">
+            <div class="btn-fechar">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#local">Local</a></li> -->
+         </div>
     </header>
-    <main>
-        <h2 class="album">Album</h2>
-    <section class="principal">
-            <div class="slides">
-                <div class="redondo">
-                    <ion-icon name="arrow-back-outline" class="prov"></ion-icon>
-                </div>
-                <div class="slide">
-                  <img src="./imagem/pexels-godisable-jacob-952212.jpg" alt="modelo">
-                </div>
-                <div class="slide">
-                    <img src="./imagem/pexels-mukesh-mohanty-936554.jpg" alt="casamento">
-                </div>
-                <div class="slide">
-                    <img src="./imagem/pexels-terje-sollie-313707.jpg" alt="casamento">
-                </div>
-                <div class="slide">
-                   <img src="./imagem/pexels-teona-swift-6850547.jpg" alt="casamento">
-                </div>
-                <div class="slide">
-                   <img src="./imagem/pexels-muhammad-renaldi-11254398.jpg" alt="Estúdio">
-                </div>
-                <div class="redondo">
-                    <ion-icon name="arrow-forward-outline" class="next"></ion-icon>
-                </div>
-            </div>
-    </section> 
-    <section class="ele-segundo">
-       <div class="text-shadow">CADASTRO
-       </div>
-      <div class="ele-filho">
-         <h1>CADASTRO</h1>
-         <p id="sub-paragrafo">FAÇA SEU CADASTRO ONLINE</p>
-         <br>
-         <p>
-            O Cadastro é parte destinada aos formandos que irão colar grau com nossa
-            empresa. Ele é muito importante, pois garante a participação na solenidade
-            e a reserva de sua beca. Além disso, ele nos ajuda a ter um controle maior
-            sobre a organização do evento para quantidade certa de pessoas e também 
-            identificar cada formando fotografado pela nossa cobertura.<a href="#"> Clique aqui
-            para fazer a reserva.</a><br><br>
-         </p>
-         <p>
-            Caso tenha dúvidas sobre o cadastro de reserva de beca, <a href="#">clique aqui</a> e
-            assista ao vídeo de passo a passo.Ou caso tenha dúvidas sobre o pagamento via aplicativo
-            com cartão e boleto bancário, <a href="#">clique aqui</a> e assista ao vídeo.
-         </p>
-      </div>
-    </section>
-    <section class="ele-terceiro">
-        <div class="text-shadow">Sobre Nos
-        </div>
-      <div class="ele-filho2">
-            <h2>Sobre Nos</h2>
-         <p>
-            A Next Galeria Formaturas é referência em eventos em Juiz de Fora-MG, principalmente quando se
-            trata de cerimonial de formatura. Somos uma empresa sólida e marcada pelo comprometimento 
-            ao longo de mais de 10 anos no mercado, especializada em fotografia, com laboratório
-            próprio.
-         </p>
-      </div>
-    </section>
-
-    <div class="video">
-         <video src="video/video-next galeria.mp4" poster="imagem/poster-video.jpg" controls width="100%" height="100%"></video>
-    </div>
     
-    <section class="ele-quarto">
-        <h2>DÚVIDA, CRITICA OU SUGESTÃO.</h2>
-         <p><a class="link" href="#" data-hover="Entre em Contato">Entre em Contato</a></p>
-    </section>
-    <div class="imagem-casamento">
-       <img src="imagem/casamento.jpg" alt="casamento">
-    </div>
-
-    <section class="ele-quinto">
-          <h2>ORÇAMENTO</h2>
-          <p>
-            PREENCHA O FORMULÁRIO ABAIXO QUE ENTRAREMOS EM CONTATO.
-          </p>
-          <form class="formulario">
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" required>
-                <label for="telefone">Telefone Fixo/Celular:</label>
-                <input type="text" name="telefone" id="telefone" placeholder="(DD) XXXXX-XXXX" required>
-            </div>
-            <div>
-                <label for="curso">Curso:</label>
-                <input type="text" name="curso" id="curso" required>
-                <label id="comicao" for="Comissão de formatura">Comissão de formatura:</label>sim:
-                <input type="checkbox" name="data" id="data" required> nao:
-                <input type="checkbox" name="data" id="data" required> 
-                <label for="faculdade">Faculdade:</label>
-                <input type="text" name="faculdade" id="faculdade" required>
-            </div>
-            <div>
-                <label for="semestre">Semestre:</label>
-                <input type="text" name="semestre" id="semestre" required>
-                <label for="quantidade de alunos">Quantidade de Alunos:</label>
-                <input type="text" name="quantidade de alunos" id="quantidade de alunos" required>
-            </div>
-            <div class="text-area">
-                <textarea style="background-color: #00000053; color: #ffffff82;" name="obs" cols="75" rows="7" placeholder=" Obs:"></textarea>
-            </div>
-            <div class="enviar"><input type="submit" value="Enviar"></div>
-          </form>
-    </section>
-
-    <aside>
-        <div class="text-shadow">Contato
-        </div>
-            <h2>CONTATO</h2>
-            <P>
-                CASO TENHA ALGUMA DÚVIDA, CRITICA OU SUGESTÃO, UTILIZE O FORMULÁRIO ABAIXO.
-            </P>
-        <form class="formulario2">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email">
-            <textarea style="background-color: #23232350;" name="Mensagem" id="text-area" cols="50" rows="10" placeholder="Mensagem:"></textarea>
-            <div class="enviar" id="aside-enviar"><input type="submit" value="Enviar"></div>
-        </form>
-    </aside>
-    </main>
-    <footer>
-        <pre>
-            <h3><ion-icon name="call-outline" style="color: goldenrod; font-size: 1.1em;"></ion-icon> FALE CONOSCO (32)-*****-**** / (32)-*****-**** |Segunda-feira –Sexta-feira | 9:00–18:00</h3>
-            <h3><ion-icon name="location-outline" style="color: goldenrod; font-size: 1.1em;"></ion-icon> VISITE-NOS SHJN/CL 215 BLOCO C LOJA 27 - Santa Terezinha Juiz de Fora - MG</h3>
-        </pre>
-        <div class="inf-menor">
-            <h3><ion-icon name="call-outline" style="color: goldenrod; font-size: 1.1em;"></ion-icon> FALE CONOSCO (32)-*****-**** / (32)-*****-**** |Segunda-feira –Sexta-feira | 9:00–18:00</h3>
-            <h3><ion-icon name="location-outline" style="color: goldenrod; font-size: 1.1em;"></ion-icon> VISITE-NOS SHJN/CL 215 BLOCO C LOJA 27 - Santa Terezinha Juiz de Fora - MG</h3>
-        </div>
-        <h3>COMO CHEGAR</h3>
-        <div id="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.0185536127074!2d-43.37254286341076!3d-21.74080639768412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c611b5febfd%3A0xd900ac6cb3d317bd!2sShopping%20Jardim%20Norte!5e0!3m2!1spt-BR!2sbr!4v1697904045601!5m2!1spt-BR!2sbr"
-             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        <p>© 2023 Next Galeria - Todos os direitos reservados</p>
-    </footer>
 </body>
-<script src="java.js"></script>
 </html>
