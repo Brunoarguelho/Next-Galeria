@@ -7,40 +7,53 @@
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(window).on('load', function() {
+            /* Quando a página estiver totalmente carregada, o div de carregamento será ocultado */
+           $('.center').fadeOut('slow');
+        });
+    </script>
 </head>
 <body>
-    <span class="loading">
-        
-    </span>
-    <span class="loading-frase">
-        <p>Carregando...</p>
-    </span>
+    <div class="center">
+        <div class="ring"></div>
+        <span>Carregando...</span>
+    </div>
     <!-- Menu -->
     <header class="cabecalho">
         <img class="logo-img" src="imagem/fotoarte.png" alt="Arte">
          <nav class="navegacao">
             <ul class="menu">
-                <li><a href="#galeria" id="galeria">Galeria</a></li>
-                <li><a href="#inicio" class="header-link">Inicio</a></li>
-                <li><a href="#sobre" class="header-link">Sobre</a></li>
-                <li><a href="#contato" class="header-link">Contato</a></li>
-                <li><a href="#local" class="header-link">Local</a></li>
+                <li> 
+                   <a href="../index02.html" id="galeria"><ion-icon name="camera-outline" class="footer-icon"></ion-icon>Galeria</a>
+                </li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#local">Local</a></li>
             </ul>
          </nav>
-         <div class="btn-abrir">
-             <ion-icon name="menu-outline"></ion-icon>
+         <div id="btn-abrir">
+             <ion-icon name="menu-outline" id="abrir"></ion-icon>
          </div>
-         <!-- <div class="barra-lateral">
-            <div class="btn-fechar">
-                <ion-icon name="close-outline"></ion-icon>
+         <div class="menu-lateral" id="menu-lateral">
+            <div id="btn-fechar">
+               <ion-icon name="close-outline" id ="fechar"></ion-icon>
             </div>
-            <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#local">Local</a></li> -->
-         </div>
-    </header>
-    
+            <div class="menu-mobile">
+             <nav class="nav-lateral">
+                 <ul id="nav-lateral-ul">
+                     <li><a href="#galeria" class="header-link">Galeria</a></li>
+                     <li><a href="#inicio" class="header-link">Inicio</a></li>
+                     <li><a href="#sobre" class="header-link">Sobre</a></li>
+                     <li><a href="#contato" class="header-link">Contato</a></li>
+                     <li><a href="#local" class="header-link">Local</a></li>
+                 </ul>
+             </nav>
+            </div>
+    </header> <!--cabeçalho-->
 </body>
+  <script src="intercao.js"></script>
 </html>
