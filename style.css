@@ -230,11 +230,90 @@ div#btn-fechar:hover{
 
 /*inicio main */
 
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
 
+.container{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    top: -10%;
+    border-radius: 8px;
+    border: 1px solid #daa5201f;
+}
 
+.flip{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+   transform-style: preserve-3d;
+   transition: all .3s ease-out;
 
+}
 
+.frente,.tras{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   border-radius: 8px;
+   box-shadow: 0px 0px 12px rgba(0,0,0,0.25);
+   backface-visibility: hidden;
+}
 
+.frente{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   z-index: 999;
+}
+
+.tras{
+    background-color: #00000080;
+    transform: rotateY(180deg);
+    transition: all .4s ease-out;
+    box-shadow: 0 0 10px #ffffff17;
+}
+
+.tras >p{
+    color:#daa52093;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.404);
+    font-size: 30px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    letter-spacing: .1em;
+    align-items: center;
+    height: 65vh;
+}
+
+.container #foto01{
+    background-image: url(imagem/efeito-slip01.jpg);
+}
+
+.container #foto02{
+    background-image: url(imagem/efeito-slip02.jpg);
+}
+
+.container #foto03{
+    background-image: url(imagem/efeito-slip03.jpg);
+}
+
+.container #foto04{
+    background-image: url(imagem/efeito-slip04.jpg);
+}
+
+.container:hover .flip{
+    transition: all 0.7s ease-in-out;
+    transform: rotateY(180deg);
+}
 
 
 
