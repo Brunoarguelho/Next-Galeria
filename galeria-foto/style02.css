@@ -143,6 +143,28 @@ span{ /*preloader*/
     color: goldenrod;
 }
 
+footer >p{ /*rodape*/
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.8em;
+    letter-spacing: -1px;
+    font-weight: bold;
+    color: #bbbbbb;
+    background-color: #000;
+    padding: 5px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+footer .icon-footer{ /*rodape, div icon*/
+    position: relative;
+    font-size: 40px;
+    color: #daa520;
+    top: 76px;
+    margin-left: 160px;
+}
+
 @media (max-width: 768px){
     .container .container-image{
        display: grid;
