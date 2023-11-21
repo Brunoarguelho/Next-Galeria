@@ -263,7 +263,6 @@ main{
    cursor: pointer;
    transform-style: preserve-3d;
    transition: all .3s ease-out;
-
 }
 
 .frente,.tras{ /*fotos*/
@@ -470,7 +469,6 @@ section.terceira-section .principal-duvidas a{
     border-radius: 5px;
 }
 
-
 section.terceira-section .principal-duvidas a::before {
     content: "";
     position: absolute;
@@ -585,7 +583,7 @@ section form.principal-orcamentos{
 form.principal-orcamentos #nome,#email{
    color: #9c9c9c;
    display: inline-block;
-   font-size: 24px;
+   font-size: 20px;
    font-weight: bold;
    padding-bottom: 10px;
    width: 60%;
@@ -848,5 +846,303 @@ footer p{
 
     div#btn-fechar{
         display: block;
+    }
+
+    main{
+        gap: 10px;
+        padding: 0 1%;
+    }
+
+    .container{
+        width: 330px;
+        height: 450px; 
+    }
+
+    .tras >p{
+        font-size: 2.8vw;
+        gap: 1px;
+    }
+
+    .container #foto01{
+        background-position: 100% 100%;
+    }
+
+    .text h3{
+        font-size: 20px;
+    }
+
+    .text{
+        font-size: 15px;
+        top: 23%; 
+    }
+
+    .text p{
+        font-size: 12px;
+    }
+
+    form.principal-orcamentos .flex select{
+        padding: 5px 30px;
+    }
+
+    section.quinta-section .principal-contatos p{
+        font-size: 16px;
+    }
+
+    form.principal-orcamentos legend{
+        font-size: 20px;
+    }
+
+    form.principal-orcamentos button{
+        padding: 5px 15px;
+        font-size: 17px;
+    }
+
+    section.quinta-section .flex input#telefone{
+        width: 50%;
+        text-indent: 2px;
+    }
+
+    section.quinta-section .flex legend{
+        font-size: 20px;
+    }
+
+    section.quinta-section .flex button{
+        width: 18%;
+    }
+
+    aside h3{
+        width: 100%;
+        font-size: 15px;
+        line-height: 3.5em;
+    }
+
+    footer h3{
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    footer #mapa iframe{
+        height: 200px;
+    }
+
+    footer p{
+        line-height: 2em; 
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .menu-lateral{
+        width: 80%;
+    }
+
+    .menu-mobile .nav-lateral #nav-lateral-ul a{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .menu-mobile .nav-lateral #nav-lateral-ul a:hover{
+        transform: scale(1.2);
+    }
+
+    header.cabecalho{
+        height: 100px;
+    }
+
+    header img.logo-img{
+        max-width: 110px;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+    }
+
+    .container{
+        width: 100%;
+        height: 400px;
+        top: 2%;
+    }
+
+    section.primeira-section{
+        margin-top: 45px;
+        padding-bottom: 15px;
+    }
+
+    .sombra{
+        font-size: 30px;
+    }
+
+    .primeira-section h3{
+        font-size: 22px;
+        top: -40px;
+    }
+
+    .primeira-section p{
+        padding: 0 4%;
+        font-size: 16px;
+        color: #e6e6e6;
+    }
+
+    section.segunda-section h3{
+        font-size: 22px;
+        top: -40px;
+    }
+
+    section.segunda-section .principal-sobre p{
+        font-size: 16px;
+    }
+
+    section.terceira-section{
+        height: 250px; 
+    }
+
+    section.terceira-section h2{
+        width: 100%;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    section.terceira-section .principal-duvidas p{
+        margin-top: 40px;
+    }
+
+    section.terceira-section .principal-duvidas a{
+        font-size: 17px;
+        width: 100%;
+    }
+
+    div.image-casamento img{
+        height: 500px;
+    }
+
+    .text{
+        width: 100%;
+        font-size: 5px;
+        top: 25%;
+        line-height: -2em;
+        text-align: left;
+    }
+
+    .text h3{
+        width: 100%;
+        font-size: 8px;
+    }
+
+    .text p{
+        font-size: 5px;
+    }
+
+    section.quarta-section h3{
+        font-size: 22px;
+        margin-top: -38px;
+    }
+
+    section form.principal-orcamento{
+        width: 100%;
+    }
+
+    form.principal-orcamentos #nome,#email{
+        width: 100%;
+        font-size: 18px;
+    }
+
+    form.principal-orcamentos input{
+        font-size: 18px;
+    }
+
+    form.principal-orcamentos legend{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    form.principal-orcamentos .flex{
+        width: 100%;
+        gap: 8px;
+        font-size: 18px;
+    }
+
+    form.principal-orcamentos .flex select{
+        padding: 5px 30px;
+        font-size: 18px;
+    }
+
+    .flex input.radio-maior{
+        transform: scale(1.1);
+    }
+
+    form.principal-orcamentos textarea{
+        width: 100%;
+        text-indent: 10px;
+        font-size: 18px;
+    }
+
+    section.quinta-section h3{
+        font-size: 22px;
+        margin-top: -40px;
+        width: 100%;
+    }
+
+    section.quinta-section .principal-contatos p{
+        font-size: 15px;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    section.quinta-section .flex{
+        width: 100%;
+    }
+
+    section.quinta-section .flex label{
+        font-size: 18px;
+    }
+
+    section.quinta-section .flex input{
+        font-size: 18px;
+        padding: 2% 0;
+    }
+
+    section.quinta-section .flex input#telefone{
+        width: 60%;
+        text-indent: 2px;
+        text-align: center;
+    }
+
+    section.quinta-section .flex legend{
+        font-size: 18px;
+    }
+
+    section.quinta-section .flex button{
+        width: 25%;
+        height: 30px;
+    }
+
+    aside h3{
+        width: 100%;
+        font-size: 15px;
+        line-height: 2.5em;
+        padding: 0 2%;
+        letter-spacing: 0px;
+    }
+
+    aside .icon-aside{
+        font-size: 1em;
+        gap: 3px;
+    }
+
+    footer h3{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    footer #mapa iframe{
+        height: 200px;
+    }
+
+    footer p{
+        width: 100%;
+        font-size: 14px;
+        margin: 30px auto;
     }
 }
