@@ -359,7 +359,7 @@ section.primeira-section{
     font-size: 35px;
     color: #bebebe;
     position: relative;
-    top: -67px;
+    top: -56px;
     letter-spacing: .1em;
     font-variant: small-caps;
 }
@@ -407,7 +407,7 @@ section.segunda-section h3{
     font-size: 35px;
     color: #9c9c9c;
     position: relative;
-    top: -67px;
+    top: -59px;
     letter-spacing: .1em;
     font-variant: small-caps;
 }
@@ -426,7 +426,9 @@ section.segunda-section .principal-sobre p{
 div.video{
    width: 100%;
    height: auto;
-
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 /*fim da div vídeo*/
 
@@ -544,7 +546,7 @@ div.image-casamento img{
 .image-casamento:hover .text {
     opacity: 1;
 } 
-/*fim da div casamneto*/
+/*fim da div casamento*/
 
 /*inicio quarta section*/
 
