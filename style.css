@@ -325,6 +325,8 @@ main{
 }
 /*fim container*/
 
+/*inicio da primeira section*/
+
 section.primeira-section{
     display: block;
     background-color: #00000093;
@@ -333,13 +335,19 @@ section.primeira-section{
     width: 100%;
     height: auto;
     margin-top: -110px;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
+    background-image: url(imagem/formatura-site.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: .9;
 }
 
-section.primeira-section .sombra{
+.sombra{
     font-size: 40px;
     text-align: center;
-    color: #9c9c9c0e;
+    color: #9c9c9c1c;
     letter-spacing: .1em;
     line-height: 2em;
     font-family:var(--fontsombra);
@@ -349,7 +357,7 @@ section.primeira-section .sombra{
     font-weight: bold;
     text-align: center;
     font-size: 35px;
-    color: #9c9c9c;
+    color: #bebebe;
     position: relative;
     top: -67px;
     letter-spacing: .1em;
@@ -362,7 +370,7 @@ section.primeira-section .sombra{
     margin-top: -20px;
     line-height: 1.8;
     font-size: 20px;
-    color: #9c9c9c;
+    color: #cfcfcf;
 }
 
 .primeira-section a{
@@ -370,16 +378,175 @@ section.primeira-section .sombra{
     color:#daa520;
 }
 
-.primeira-section a:hover{
-    transition: all ease-in-out .3s;
-    transform: scale(1.1);
+section.primeira-section a:hover{
+    font-weight: bold;
+    transition: all .1s ease-in-out;
+    text-decoration: underline;
 }
 
 .primeira-section .paragrafo-principal{
     font-weight: bold;
+} /*fim da primeira section*/
+
+/*inicio da segunda section*/
+
+section.segunda-section{
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px solid #daa5209e;
+    border-bottom: 2px solid #daa5209e;
+    padding-bottom: 40px;
+}
+
+section.segunda-section h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    color: #9c9c9c;
+    position: relative;
+    top: -67px;
+    letter-spacing: .1em;
+    font-variant: small-caps;
+}
+
+section.segunda-section .principal-sobre p{
+    color: #9c9c9c;
+    text-align: center;
+    padding: 0 8%;
+    margin-top: -20px;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #cfcfcfb0;
+} /*fim da segunda section*/
+
+/*inicio da div video*/
+div.video{
+   width: 100%;
+   height: auto;
+
+}
+/*fim da div vídeo*/
+
+/*inicio da terceira section*/
+
+section.terceira-section{
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px solid #daa5209e;
+    border-bottom: 2px solid #daa5209e;
+    padding-bottom: 40px;
+}
+
+section.terceira-section h2{
+    font-size: 30px;
+    padding-top: 10px;
+    color: #9c9c9c;
+}
+
+section.terceira-section .principal-duvidas p{
+    margin-top: 50px;
+}
+
+section.terceira-section .principal-duvidas a{
+    display: inline-block;
+    text-decoration: none;
+    color: #9c9c9c;
+    transition: all .3s ease-out;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'Petit Formal Script', cursive;
+    position: relative;
+    padding: 5px 100px;
+    overflow: hidden;
+    transition: color 0.3s;
+    border-radius: 5px;
 }
 
 
+section.terceira-section .principal-duvidas a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: -1;
+    transition: transform 0.3s;
+    transform-origin: 0 0;
+    transform: scaleY(0);
+}
+
+section.terceira-section .principal-duvidas a:hover:before {
+    transform: scaleY(1);
+}
+
+section.terceira-section .principal-duvidas a:hover {
+    color: #a28f0f;
+}
+/*fim da terceira section*/
+
+/*inicio div casamento*/
+div.image-casamento{
+    position: relative;
+    width: 100%;
+}
+
+div.image-casamento img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform .2s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 100%;
+    transition: .5s ease;
+    background-color: #000000ec;
+  }
+
+.image-casamento:hover .overlay {
+    height: 100%;
+}
+
+.text{
+    color: #9c9c9c;
+    margin: 10% auto 0 auto;
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    left: 36%;
+    transform: translate(-30%, -30%);
+    text-align: center;
+    opacity: 0;
+}
+
+.text h3{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 24px;
+}
+
+.text p{
+   font-size: 18px;
+}
+
+.image-casamento:hover .text {
+    opacity: 1;
+} 
+/*fim da div casamneto*/
+
+/*inicio quarta section*/
 
 /*media screen*/
 
