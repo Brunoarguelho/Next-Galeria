@@ -105,7 +105,7 @@ header.cabecalho{ /*inicio do header*/
 }
 
 header img.logo-img{ /*img logo*/
-   max-width: 300px;
+   max-width: 150px;
 }
 
 nav.navegacao{ /*nav*/
@@ -550,7 +550,289 @@ div.image-casamento img{
 
 /*inicio quarta section*/
 
-/*media screen*/
+section.quarta-section{
+   width: 100%;
+   height: auto;
+   background-color: #333;
+   margin: 0 auto;
+   text-align: center;
+   border-top: 2px solid #daa5209e;
+   border-bottom: 2px solid #daa5209e;
+   padding-bottom: 40px;
+}
+
+section.quarta-section h3{
+    color: #9c9c9c;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: -54px;
+    padding-bottom: 50px;
+    font-variant: small-caps;
+}
+
+section form.principal-orcamentos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 0;
+}
+
+form.principal-orcamentos #nome,#email{
+   color: #9c9c9c;
+   display: inline-block;
+   font-size: 24px;
+   font-weight: bold;
+   padding-bottom: 10px;
+   width: 60%;
+   border-radius: 5px;
+   outline: none;
+}
+
+form.principal-orcamentos input{
+    background-color: #00000090;
+    text-indent: 20px;
+    box-shadow: 0 0 10px #9c9c9c32;
+    border: none;
+    font-size: 22px;
+    padding: 3px 0;
+}
+
+form.principal-orcamentos legend{
+    color: #9c9c9c;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+form.principal-orcamentos .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #9c9c9c;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+form.principal-orcamentos .flex select{
+    padding: 5px 20px;
+    background-color: #00000090;
+    color: #9c9c9c;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #a28e0f60;
+}
+
+ .flex input.radio-maior{
+    transform: scale(1.3);
+}
+
+form.principal-orcamentos textarea{
+    width: 60%;
+    outline: none;
+    background-color: #00000090;
+    color: #9c9c9c;
+    text-indent: 20px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #9c9c9c32;
+    font-size: 20px;
+}
+
+form.principal-orcamentos button{
+    margin-top: 10px;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #00000090;
+    outline: none;
+    border: none;
+    color: #9c9c9c;
+    font-size: 20px;
+    font-variant: small-caps;
+    border-radius: 3px;
+}
+
+form.principal-orcamentos button:hover{
+    background-color: var(--terceira-color);
+    color: var(--primeira-color);
+    box-shadow: 0 0 10px #e1e1e132;
+    transform: scale(1.1);
+}
+/*fim da quarta section*/
+
+/*quinta section*/
+
+section.quinta-section{
+    width: 100%;
+    height: auto;
+    background-color: #0000005c;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 2px solid #a28f0f;
+    padding-bottom: 40px;
+}
+
+section.quinta-section h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: #9c9c9c;
+    letter-spacing: 1.1px;
+    margin-top: -53px;
+    padding-bottom: 40px;
+}
+
+section.quinta-section .principal-contatos p{
+    font-weight: bold;
+    color: #9c9c9c;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+section.quinta-section .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+section.quinta-section .flex label{
+    font-weight: bold;
+    color: #9c9c9c;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+section.quinta-section .flex input{
+    width: 70%;
+    padding: 1% 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ffffff1a;
+    background-color: #000000b6;
+}
+
+section.quinta-section .flex input#telefone{
+    width: 40%;
+    text-indent: 20px;
+    color: #9c9c9c;
+}
+
+section.quinta-section .flex legend{
+    font-weight: bold;
+    color: #9c9c9c;
+    margin-top: -10px;
+    font-size: 24px;
+}
+
+section.quinta-section .flex textarea{
+    resize: none;
+    height: 100px;
+    width: 70%;
+    background-color: #000000b6;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ffffff1a;
+    color: #9c9c9c;
+    text-indent: 20px;
+}
+
+section.quinta-section .flex button{
+    width: 10%;
+    height: 30px;
+    font-variant: small-caps;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #9c9c9c;
+    background-color: #000000b6;
+    transition: .2s ease-in-out;
+}
+
+section.quinta-section .flex button:hover{
+    cursor: pointer;
+    background-color: var(--terceira-color);
+    transform: scale(1.1);
+    color: #000;
+}
+/*fim da quinta section*/
+
+/*inicio aside*/
+
+aside{
+    width: 100%;
+    height: auto;
+    padding: 2%  0;
+    text-align: center;
+}
+
+aside h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #9c9c9c;
+    font-size: 20px;
+    line-height: 2.9em;
+}
+
+aside .icon-aside{
+    color: var(--terceira-color);
+    font-size: 1.2em;
+    gap: 5px;
+}
+
+/*fim do aside*/
+
+/*inicio footer*/
+
+footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+footer h3{
+    color: var(--terceira-color);
+    font-size: 30px;
+    font-variant: small-caps;
+    margin-bottom: 25px;
+}
+
+footer #mapa iframe{
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+footer p{
+    width: 90%;
+    color:#9c9c9c;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #000000b6;
+    line-height: 2.5em;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.075)
+}
+
+/*fim do footer*/
+
+/*--------------------------------------media screen--------------------------------------*/
 
 @media screen and (max-width: 840px) {
     nav.navegacao{

@@ -24,7 +24,7 @@
     </div>
     <!-- Menu -->
     <header class="cabecalho">
-        <img class="logo-img" src="imagem/fotoarte.png" alt="Arte">
+        <img class="logo-img" src="imagem/foto-logo03-removebg-preview.png" alt="Arte">
          <nav class="navegacao">
             <ul class="menu">
                 <li> 
@@ -55,7 +55,7 @@
              </nav>
             </div>
     </header> <!--cabeçalho-->
-    <!----------------------------------------------álbum----------------------------------------->
+    <!---------------------------------álbum-------------------------------------------------->
  <main>
      <div class="container"> <!--container-->
         <div class="flip">
@@ -95,7 +95,7 @@
         </div>
      </div>
  </main> <!--principal-->
- <!----------------------------------------------cadastro------------------------------------------->
+ <!------------------------------------cadastro----------------------------------------------->
  <section class="primeira-section">
     <div class="sombra">
         <h2>Cadastro</h2>
@@ -119,7 +119,7 @@
              </p>
         </div>
 </section>
-<!-------------------------------------------Sobre--------------------------------------->
+<!-------------------------------------Sobre-------------------------------------------------->
 <section class="segunda-section">
     <div class="sombra">
         <h2>Sobre Nos</h2>
@@ -134,19 +134,19 @@
          </p>
     </div>
 </section>
-<!-------------------------------------------Vídeo-------------------------------------->
+<!-------------------------------------Vídeo-------------------------------------------------->
 <div class="video">
     <video src="video/video-next galeria.mp4" width="100%" height="auto" 
     controls poster="imagem/poster-video01.jpg"></video>
 </div>
-<!-------------------------------------------Duvidas-------------------------------------->
+<!-------------------------------------Duvidas------------------------------------------------>
 <section class="terceira-section">
     <h2>DÚVIDA, CRITICA OU SUGESTÃO.</h2>
     <div class="principal-duvidas">
         <p><a href="#duvidas">Entre em Contato</a></p>
     </div>
 </section>
-<!---------------------------------------foto-casamento----------------------------------->
+<!-------------------------------------foto-casamento----------------------------------------->
 <div class="image-casamento">
     <img class="image" src="imagem/casamento-site.jpg" alt="casamento" id="foto-casamento">
     <div class="overlay">
@@ -170,8 +170,78 @@
 </div>
 <!-------------------------------------Orçamento---------------------------------------------->
 <section class="quarta-section">
-
+    <div class="sombra">
+        <h2>Orçamento</h2>
+    </div>
+        <h3>Orçamento</h3>
+    <form class="principal-orcamentos">
+        <label for="text" nome="nome" id="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required><br><br>
+        <label for="email" nome="email" id="email">E-mail:</label>
+        <input type="email" name="email" id="email"><br><br>
+        <legend>Estúdios</legend>
+        <div class="flex">
+            <input type="radio" name="opcao" value="simples" class="radio-maior" required><label for="simples">Simples</label><br>
+            <input type="radio" name="opcao" value="completo" class="radio-maior" required><label for="completo">Completo</label>
+            <br/><br />
+            <select name="quantidade" required>
+                <option selected disabled hidden>Quantidade</option>
+                <option value="1">1 (Álbum)</option>
+                <option value="2">2 (Álbum)</option>
+                <option value="3">3 (Álbum)</option>
+                <option value="4">4 (Álbum)</option>
+            </select>
+        </div>
+        <textarea name="text" id="area" cols="30" rows="10" placeholder="Obs:"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
 </section>
+<!-------------------------------------Contato------------------------------------------------>
+<section class="quinta-section">
+    <div class="sombra">
+        <h2>Contato</h2>
+    </div>
+        <h3>Contato</h3>
+    <div class="principal-contatos">
+        <p> CASO TENHA ALGUMA DÚVIDA, CRITICA OU SUGESTÃO, UTILIZE O FORMULÁRIO ABAIXO.</p>
+        <form action="" method="post">
+            <div class="flex">
+                <label for="name" nome="nome">Nome:</label>
+                <input type="text" name="nome" required><br><br>
+                <label for="email" nome="email">E-mail:</label>
+                <input type="email" name="email" required><br><br>
+                <label for="phone" nome="telefone" id="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="(DD)" required><br><br>
+                <legend>mensagem:</legend><br>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="5" required placeholder="Obs:"></textarea><br>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!-------------------------------------Aside-------------------------------------------------->
+<aside>
+    <div class="localizacao">
+        <h3>
+            <ion-icon name="call-outline" class="icon-aside"></ion-icon>
+            FALE CONOSCO (32)-*****-**** / (32)-*****-**** |Segunda-feira –Sexta-feira | 9:00–18:00
+        </h3>
+        <h3>
+            <ion-icon name="location-outline" class="icon-aside"></ion-icon>
+            VISITE-NOS SHJN/CL 215 BLOCO C LOJA 27 - Santa Terezinha Juiz de Fora - MG
+        </h3>
+    </div>
+</aside>
+<!-------------------------------------footer------------------------------------------------->
+<footer>
+    <h3>COMO CHEGAR</h3>
+    <div id="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3706.0185536127074!2d-43.37254286341076!3d-21.74080639768412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989c611b5febfd%3A0xd900ac6cb3d317bd!2sShopping%20Jardim%20Norte!5e0!3m2!1spt-BR!2sbr!4v1697904045601!5m2!1spt-BR!2sbr"
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <p>© 2023 Next Galeria - Todos os direitos reservados</p>
+</footer> <!--fim do site-->
 </body>
   <script src="intercao.js"></script>
 </html>
