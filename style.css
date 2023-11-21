@@ -741,7 +741,6 @@ section.quinta-section .flex legend{
 
 section.quinta-section .flex textarea{
     resize: none;
-    height: 100px;
     width: 70%;
     background-color: #000000b6;
     border: none;
