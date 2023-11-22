@@ -929,7 +929,7 @@ footer p{
         line-height: 2em; 
         font-size: 18px;
     }
-}
+} /*barra laretal em stop*/
 
 @media screen and (max-width: 460px) {
     .menu-lateral{
@@ -954,19 +954,55 @@ footer p{
     }
 
     main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        width: 100%;
     }
 
     .container{
         width: 100%;
-        height: 400px;
-        top: 2%;
+        height: 250px;
+        top: 1%;
+        border-radius: 0px;
     }
 
+    .frente,.tras{
+        border-radius: 0px; 
+    }
+
+    .tras >p{
+        height: 25vh;
+    }
+
+    .container #foto01{ /*fotos*/
+        background-size: cover;
+        background-position: 10% 10%;
+        background-repeat: no-repeat;
+    }
+    
+    .container #foto02{ /*fotos*/
+        background-image: url(imagem/efeito-slip02.jpg);
+        background-size: cover;
+        background-position: 30% 30%;
+        background-repeat: no-repeat;
+    }
+    
+    .container #foto03{ /*fotos*/
+        background-image: url(imagem/efeito-slip03.jpg);
+        background-size: cover;
+        background-position: 10% 10%;
+        background-repeat: no-repeat;
+    }
+    
+    .container #foto04{ /*fotos*/
+        background-image: url(imagem/efeito-slip04.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
+
     section.primeira-section{
-        margin-top: 45px;
+        margin-top: 8px;
         padding-bottom: 15px;
     }
 
@@ -995,7 +1031,7 @@ footer p{
     }
 
     section.terceira-section{
-        height: 250px; 
+        height: 200px; 
     }
 
     section.terceira-section h2{
@@ -1014,24 +1050,26 @@ footer p{
     }
 
     div.image-casamento img{
-        height: 500px;
+        height: 400px;
     }
 
     .text{
         width: 100%;
-        font-size: 5px;
-        top: 25%;
-        line-height: -2em;
-        text-align: left;
+        font-size: 15px;
+        top: 30%;
+        left: 30%;
+        transition: (-50%, -50%);
+        line-height: 15px;
+        text-align: center;
     }
 
     .text h3{
         width: 100%;
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .text p{
-        font-size: 5px;
+        font-size: 10px;
     }
 
     section.quarta-section h3{
