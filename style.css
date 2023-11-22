@@ -25,6 +25,10 @@
     box-sizing: border-box
 }
 
+html{ /*rolagem devagar*/
+    scroll-behavior: smooth;
+}
+
 html body{ /*corpo site*/
     width: 100%;
     min-height: 100vh;
@@ -32,6 +36,7 @@ html body{ /*corpo site*/
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+    scroll-behavior: smooth;
 }
 
 .center{ /*inicio do preloader*/
@@ -182,7 +187,7 @@ header a:hover{ /*links dentro do header*/
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 70%;
+    width: 80%;
     overflow: hidden;
     display: none;
 }
@@ -513,7 +518,7 @@ div.image-casamento img{
     height: 0;
     width: 100%;
     transition: .5s ease;
-    background-color: #000000ec;
+    background-color: #000000ca;
   }
 
 .image-casamento:hover .overlay {
@@ -838,6 +843,9 @@ footer p{
 
     .menu-lateral{
         display: block;
+        /* width: 70%; */
+        width: 0;
+        opacity: 0;
     }
 
     div#btn-abrir{
@@ -933,7 +941,9 @@ footer p{
 
 @media screen and (max-width: 460px) {
     .menu-lateral{
-        width: 80%;
+        display: block;
+        width: 0;
+        opacity: 0;
     }
 
     .menu-mobile .nav-lateral #nav-lateral-ul a{

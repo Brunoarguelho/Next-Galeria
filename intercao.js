@@ -28,3 +28,4 @@ btnFechar.addEventListener('click', ()=>{  // Botão para fechar o menu lateral
         Menu.style.opacity = 0
         }
      })
+
